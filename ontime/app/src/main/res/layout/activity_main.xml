@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ADEDEDED"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="on.time"
+                android:textStyle="bold"
+                android:textSize="28sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/mm"
+                android:src="@drawable/ic_back">
+
+            </TextView>
+
+
+
+
+
+
+        </RelativeLayout>
+        <SearchView
+            android:layout_marginTop="20sp"
+            android:layout_below="@+id/logo"
+            android:id="@+id/etsearch"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bgsearch"
+            android:queryBackground="@android:color/transparent"
+            android:iconifiedByDefault="false"
+            android:hint="Search Task"
+            android:queryHint="Search Task"
+            android:searchHintIcon="@null"
+            android:searchIcon="@null" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_below="@+id/title"
+        android:id="@+id/gambar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_1" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/datalist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#787878"
+
+        android:src="@drawable/ic_add" />
+
+</RelativeLayout>

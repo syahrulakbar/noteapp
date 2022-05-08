@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ontime</string>
+    <string-array name="title" fontFamily="@drawable/mm"
+        >
+        <item fontFamily="">tugas</item>
+        <item>liburan</item>
+        <item>acara</item>
+
+    </string-array>
+</resources>
